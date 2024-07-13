@@ -1,0 +1,506 @@
+body {
+  font-family: Arial, sans-serif; 
+  background-color: #ffffff;
+  color: #000; 
+  margin: 0;
+  padding: 1000;
+}
+a{
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+} 
+.projeto-conteudo a {
+  color: #fff; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+a:hover {
+  color: rgb(255, 187, 1); 
+}
+
+img {
+  max-width: 100%; 
+  height: auto;
+}
+
+
+header#cabecalho {
+  background-color: #f1f0f0f1; 
+  border-bottom: 4px solid rgb(255, 187, 1);
+  padding: 0px 0px; /* Reduce padding for a more compact header */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  position: fixed; /* Make the header fixed */
+  top: -25px; /* Position it at the top */
+  width: 100%; /* Make it span the full width */
+  z-index: 45; /* Ensure it's on top of other elements */
+}
+
+#logo {
+  width: 140px; /* Adjust width as needed */
+  height: 140px; /* Maintain aspect ratio */
+}
+
+
+nav#menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav#menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0px;
+  right: 20px;
+}
+
+nav#menu li {
+  display: inline-block;
+  margin-right: 70px; /* Reduce space between list items */
+  padding: 5px 20px; /* Reduce padding for a more compact menu */
+  font-size: 20pt;
+  
+}
+
+main#corpo {
+  padding: 10px;
+  margin-top: 150px; /* Adjust margin based on header height */
+}
+nav#menu li a {
+  color: #000; /* Text color for menu items */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav#menu li a:hover {
+  color: rgb(153, 112, 0); 
+  text-decoration: none;
+  border-bottom: 1px solid rgb(153, 112, 0);
+}
+
+footer#rodape {
+  background-color: #fcf9f9;
+  padding: 10px 20px;
+  text-align: center;
+  color:#000;
+  border-top: 2px solid rgb(255, 187, 1);
+}
+
+section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 20pt; /* Larger heading */
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+img#img-s1{
+  position: static; /* Remove absolute positioning */
+  width: 350px; /* Set a smaller width */
+  height: 250px; /* Set a smaller height */
+}
+
+figure.foto-legenda {
+  display: flex; /* Make the figure a flex container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Align items vertically in the center */
+  margin: 0 auto; /* Center the figure horizontally */
+  width: 80%; /* Adjust width as needed */
+  max-width: 1000px; /* Set a maximum width for responsiveness */
+  padding: 20px;
+}
+
+figure.foto-legenda a {
+  display: block; /* Make each image link a block element */
+  text-decoration: none; /* Remove default link underline */
+  margin-bottom: 20px; /* Add spacing between images */
+}
+
+figure.foto-legenda img {
+  width: 300px; /* Set a uniform width for all images */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid rgb(255, 187, 1); /* Add a border */
+  transition: transform 0.8s ease; /* Add a smooth hover effect */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+figure.foto-legenda a:hover img {
+  transform: scale(1.1); /* Scale the image on hover */
+  box-shadow: 0 0 10px rgb(153, 112, 0); /* Add a subtle drop shadow */
+  opacity: 1s;
+}
+#redes-sociais {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  flex-wrap: wrap; /* Wrap icons to multiple lines if needed */
+  margin-top: 30px; /* Add some margin above the section */
+}
+
+#redes-sociais li {
+  margin: 5px; /* Add spacing between icons */
+  display: inline-block; 
+}
+
+#redes-sociais a {
+  display: flex;
+  flex-direction: column; /* Stack icons and text vertically */
+  align-items: center;
+  text-align: center;
+}
+
+#redes-sociais img {
+  width: 40px; /* Adjust icon size as needed */
+  height: auto;
+  margin-bottom: 10px; /* Add some space below the icon */
+}
+
+footer#redes-sociais {
+  width: 1000px;
+  clear: both;
+  border-top: 1px solid rgb(255, 187, 1);
+  height: auto;
+}
+
+footer#redes-sociais p{
+  text-align: center;
+}
+
+img#contato-rapido{
+width: 50px; 
+height: 50px; 
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+position: fixed;
+bottom: 25px;
+right: 5px;
+}
+
+::-webkit-scrollbar {
+width: 5px;
+background-color: rgb(255, 187, 1);
+}
+
+::-webkit-scrollbar-thumb{
+width: 5px;
+background-color: rgb(153, 112, 0);
+border-radius: 1px;
+}
+
+section#inicio-texto  a{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+section#inicio-texto h1 h2{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+section#incio-texto p{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+figcaption{
+  color: #000;
+}
+
+section.projeto {
+  background-color: rgba(0, 0, 0, 0.082);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(255, 187, 1);
+}
+
+section.projeto:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.projeto-conteudo {
+  display: flex;
+  align-items: center;
+}
+
+.projeto-conteudo img#img1 {
+  width: 600px;
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: auto;
+}
+.projeto-texto {
+  max-width: 50%;
+  text-align: left;
+}
+
+.projeto-texto h2 {
+  font-size: 24pt;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.projeto-texto p {
+  font-size: 16pt;
+  color: #000;
+  margin-top: 20px;
+  max-height: 100px; /* Limit the height of the paragraph */
+  overflow: hidden;
+  margin-bottom: 15px;
+  transition: max-height 0.5s ease;
+}
+.projeto-texto p.mostrar-texto {
+  max-height: 1000px; /* Adjust to a large enough value to show all text */
+
+}
+
+.mostrar-mais {
+  position: relative;
+  background-color: rgb(255, 187, 1);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display:flex;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.mostrar-mais:hover {
+  background-color: rgb(153, 112, 0);
+}
+
+
+#cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f1f0f0f1;
+  border: 1px solid rgb(255, 187, 1);
+  color: #000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#cookie-consent p {
+  margin: 0;
+  padding-right: 20px;
+}
+
+#cookie-consent a {
+  color: rgb(255, 187, 1);
+  text-decoration: underline;
+}
+
+#cookie-consent button {
+  background-color: rgb(255, 187, 1);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid rgb(153, 112, 0);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#cookie-consent button:hover {
+  background-color:  rgb(153, 112, 0);
+  color:#000
+}
+
+footer#div1{
+  margin: 100px 0px 100px ;
+  border-top: 2px solid rgb(255, 187, 1)
+}
+
+
+.container {
+  max-width: 700px;
+  margin: 1px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid  rgb(255, 187, 1);
+  border-radius: 8px;
+  margin-top: 200px;
+}
+section#contato{
+ margin-top:100px;
+}
+.form-group {
+  margin-bottom: 1px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid  rgb(255, 187, 1);
+  border-radius: 4px;
+  background-color: #f3f2f2;
+  color: #000;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.btn {
+  background-color: rgb(255, 187, 1);
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid  rgb(255, 187, 1);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color:  rgb(153, 112, 0);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color:  rgb(255, 187, 1);
+}
+
+section.termos{
+text-align: justify; 
+line-height: 1.5; 
+font-size: 16px;
+font-family: 'Times New Roman', Times, serif;
+width: 800px; 
+margin: 200px auto; 
+padding: 20px;
+border: 2px solid rgb(255, 187, 1); 
+border-radius: 5px; 
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+.button{
+background-color: rgb(255, 187, 1);
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid  rgb(255, 187, 1);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1px;
+}
+
+.button:hover{
+background-color:  rgb(153, 112, 0);
+}
+
+section#mensagem h2{
+text-align: center;
+font-size: 26pt;
+margin-top: 300px;
+}
+
+section#mensagem p{
+text-align: center;
+font-size: 13pt;
+}
+
+
+h2#central{
+text-align: center;
+}
+
+
+/* Estilo geral para a área da caixa de seleção */
+.checkbox {
+display: flex;
+align-items: center;
+margin: 10px 0px;
+}
+
+/* Ocultar a caixa de seleção padrão */
+.checkbox input[type="checkbox"] {
+display: none;
+}
+
+/* Estilo para o rótulo da caixa de seleção */
+.checkbox label {
+display: flex;
+text-align: center;
+align-items: center;
+cursor: pointer;
+font-size: 14pt;
+color: #000;
+}
+
+/* Estilo para o link dentro do rótulo */
+.checkbox label a {
+color: rgb(153, 112, 0);
+}
+
+.checkbox label a:hover {
+color: rgb(255, 187, 1);
+}
+
+/* Estilo para a caixa de seleção personalizada */
+.checkbox label::before {
+content: '';
+display: flex;
+width: 20px;
+height: 20px;
+margin-right: 10px;
+border: 2px solid rgb(255, 187, 1);
+border-radius: 4px;
+background-color: transparent;
+transition: background-color 0.3s ease, border-color 0.3s ease;
+
+}
+
+/* Estilo para a caixa de seleção quando marcada */
+.checkbox input[type="checkbox"]:checked + label::before {
+background-color:  rgb(255, 187, 1);
+border-color: rgb(153, 112, 0);
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white"%3E%3Cpath d="M6.85 11.12L3.3 7.56 4.74 6.12l2.11 2.11 4.15-4.15 1.44 1.44-5.59 5.59z"/%3E%3C/svg%3E');
+background-repeat: no-repeat;
+background-position: center;
+}
+
+/* Adicionar foco ao checkbox */
+.checkbox input[type="checkbox"]:focus + label::before {
+outline: 2px solid rgb(153, 112, 0);
+}
+
+div.position{
+margin: 50px 140px;
+
+}
